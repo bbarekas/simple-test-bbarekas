@@ -1,9 +1,9 @@
-# simple-server
+# simple-test-bbarekas
 
 > a crate for building a simple blocking HTTP server
 
-[![Build Status](https://travis-ci.org/steveklabnik/simple-server.svg?branch=master)](https://travis-ci.org/steveklabnik/simple-server)
-[![crates.io](https://img.shields.io/crates/v/simple-server.svg)](https://crates.io/crates/simple-server)
+[![Build Status](https://travis-ci.org/bbarekas/simple-test-bbarekas.svg?branch=master)](https://travis-ci.org/bbarekas/simple-test-bbarekas)
+[![crates.io](https://img.shields.io/crates/v/simple-test-bbarekas.svg)](https://crates.io/crates/simple-test-bbarekas)
 
 **NOTE**: this crate has not been evaluated for security concerns. therefore, we recommend
 that you take caution before using it in a production application.
@@ -11,20 +11,20 @@ that you take caution before using it in a production application.
 ## up and running
 
 this crate is written in [the rust programming language]. you'll need rust to run
-this crate. you can install rust using [rustup]. `simple-server` requires that you
+this crate. you can install rust using [rustup]. `simple-test-bbarekas` requires that you
 use **rust version 1.20+**.
 
 to get this crate running locally:
 
 1. fork and clone this repository
-2. `cd simple-server`
+2. `cd simple-test-bbarekas`
 3. `cargo build`
 
 to use this crate in your project, add the following line to your `Cargo.toml`
 in the `[dependencies]` section:
 
 ```toml
-simple-server = "0.3.0"
+simple-test-bbarekas = "0.1.0"
 ```
 
 to see this crate in action, check out the [examples].
@@ -53,8 +53,8 @@ cargo doc --open
 
 there are several examples provided with this crate:
 
-- [server](https://github.com/steveklabnik/simple-server/blob/master/examples/server.rs)
-- [routes](https://github.com/steveklabnik/simple-server/blob/master/examples/routes.rs)
+- [server](https://github.com/simple-test-bbarekas/blob/master/examples/server.rs)
+- [routes](https://github.com/simple-test-bbarekas/blob/master/examples/routes.rs)
 
 to run an example:
 
@@ -70,13 +70,13 @@ need to do one of the following depending on your system:
 on Linux/OS X:
 
 ```bash
-RUST_LOG="simple_server=info" cargo run --example server
+RUST_LOG="simple_test_bbarekas=info" cargo run --example server
 ```
 
 on Windows PowerShell:
 
 ```ps
-$env:RUST_LOG="simple_server=info";
+$env:RUST_LOG="simple_test_bbarekas=info";
 cargo run --example server
 ```
 
@@ -85,4 +85,4 @@ cargo run --example server
 
 ## license
 
-`simple-server` is licensed under both the Apache2 and MIT licenses.
+`simple-test-bbarekas` is licensed under both the Apache2 and MIT licenses.
