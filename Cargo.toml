@@ -1,0 +1,23 @@
+[package]
+name = "simple-test-bbarekas"
+version = "0.1.0"
+license = "MIT/Apache-2.0"
+authors = ["bbarekas <bbarekas@gmail.com>"]
+description = "a simple webserver."
+repository = ""
+readme = "README.md"
+categories = ["web-programming"]
+
+[badges]
+travis-ci = { repository = "bbarekas/simple-test-bbarekas" }
+
+[dependencies]
+http = "0.1.0"
+httparse = "1.2.3"
+log = "0.3"
+num_cpus = "1"
+scoped_threadpool = "0.1.7"
+time = "0.1"
+
+[dev-dependencies]
+env_logger = "0.3"
