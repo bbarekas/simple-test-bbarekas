@@ -17,5 +17,6 @@ fn main() {
         Ok(response.body("Hello Rust!".as_bytes().to_vec())?)
     });
 
+    info!("Starting server ... {}:{}", host, port);
     server.listen(host, port);
 }
