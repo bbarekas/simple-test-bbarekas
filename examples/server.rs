@@ -7,8 +7,6 @@ extern crate simple_test_bbarekas;
 use simple_test_bbarekas::Server;
 
 fn main() {
-    env_logger::init().unwrap();
-
     let host = "127.0.0.1";
     let port = "7878";
 
