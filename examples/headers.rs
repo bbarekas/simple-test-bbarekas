@@ -14,8 +14,10 @@ fn main() {
 
     let server = Server::new(|request, mut response| {
         info!("Request received. {} {}", request.method(), request.uri());
+        let res = "Hello Rust!".as_bytes().to_vec();
         response.header(header::CONTENT_TYPE, "text/plain".as_bytes());
-        Ok(response.body("Hello Rust!".as_bytes().to_vec())?)
+        response.header(header::CONTENT_LENGTH, res.len());
+        Ok(response.body(res)?)
     });
 
     server.listen(host, port);
